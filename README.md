@@ -12,6 +12,7 @@
       - [SLO](#slo)
         - [Notes](#notes-1)
         - [Objectives](#objectives)
+      - [Alert Policies](#alert-policies)
       - [Service](#service)
 
 ## Introduction
@@ -214,6 +215,13 @@ objectives:
   - *Total* represents the query used for gathering data from metric sources
     that is used as the denominator. Received data is used to compare objectives
     (threshold) values to find total number of metrics.
+
+---
+
+#### Alert Policies
+
+A Service is a high-level definition of an alert policy which can be shared between
+service level objectives.
 
 ---
 
