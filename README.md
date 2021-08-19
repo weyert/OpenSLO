@@ -74,6 +74,8 @@ metadata:
 spec:
   description: string # optional
   service: [service name] # name of the service to associate this SLO with
+  userLabels: # optional, key-value map
+    [key]: [value]
   indicator: # represents the Service Level Indicator (SLI)
     thresholdMetric: # represents the metric used to inform the Service Level Object in the objectives stanza
       source: string # data source for the metric
@@ -99,6 +101,8 @@ spec:
 
 ##### Notes (SLO)
 
+- **userLabels** optional, used to annotate the service-level objective,
+  e.g. extra Prometheus labels
 - **indicator** optional, represents the Service Level Indicator (SLI).
   Currently this only supports one Metric, `thresholdMetric`, with `ratioMetric`
   supported in the [objectives](#objectives) stanza.
